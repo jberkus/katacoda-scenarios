@@ -20,6 +20,10 @@
         {
           "file": "patroni_k8s.yaml",
           "target": "~/"
+        },
+        {
+          "file": "pg-shell.yaml",
+          "target": "~/"
         }
       ]
     }

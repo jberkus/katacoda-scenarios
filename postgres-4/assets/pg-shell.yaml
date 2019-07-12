@@ -5,8 +5,8 @@ metadata:
 spec:
   containers:
   - name: pg-shell
-    image: jberkus/simple-patroni
-    command: ["/bin/bash", "-ec", "while :; do echo '.'; sleep 10 ; done"]
+    image: jberkus/patroni-katacoda:0.1
+    command: ["/bin/bash", "-ec", "while :; do echo '.'; sleep 100 ; done"]
     env:
     - name: PGUSER
       value: postgres

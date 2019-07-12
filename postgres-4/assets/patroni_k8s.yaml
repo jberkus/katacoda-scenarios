@@ -65,7 +65,7 @@ spec:
       serviceAccountName: patronidemo
       containers:
       - name: *cluster_name
-        image: jberkus/simple-patroni
+        image: jberkus/patroni-katacoda:0.1
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8008

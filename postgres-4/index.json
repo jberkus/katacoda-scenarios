@@ -16,7 +16,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": [
+      "host01": [
         {
           "file": "patroni_k8s.yaml",
           "target": "~/"

@@ -1,8 +1,8 @@
 {
-  "title": "Hello World Scenario",
-  "description": "Your First Scenario",
-  "difficulty": "beginner",
-  "time": "2 minutes",
+  "title": "Four Node PostgreSQL Patroni: Manual Deployment",
+  "description": "This scenario walks you through doing a manual (YAML) deployment, failover, and CLI interation of a 3-node patroni cluster running on a 4-node kubernetes cluster.",
+  "difficulty": "intermediate",
+  "time": "15 minutes",
   "details": {
     "steps": [{
       "title": "Step 1 - Run Command",
@@ -14,6 +14,14 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "patroni_k8s.yaml",
+          "target": "~/"
+        }
+      ]
     }
   },
   "environment": {

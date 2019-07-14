@@ -1,0 +1,96 @@
+{
+  "title": "Cloud Native Databases Workshop",
+  "description": "In-person workshop for learning how to deploy and administrate databases running on Kubernetes",
+  "difficulty": "intermediate",
+  "time": "45 minutes",
+  "details": {
+    "steps": [
+      {
+      "title": "Step 1: Create Etcd StatefulSet",
+      "text": "etcd-statefulset.md"
+      },
+      {
+      "title": "Step 2: Delete Etcd Statefulset",
+      "text": "etcd-statefulset-drop.md"
+      },
+      {
+      "title": "Step 3: Load Etcd Operator",
+      "text": "etcd-operator-load.md"
+      },
+      {
+      "title": "Step 4: Create Etcd Cluster",
+      "text": "etcd-cluster-create.md"
+      },
+      {
+      "title": "Step 5: Demonstrate Etcd HA",
+      "text": "etcd-statefulset.md"
+      },
+      {
+      "title": "Step 6: Grow the Etcd Cluster",
+      "text": "etcd-statefulset.md"
+      },
+      {
+      "title": "Step 7: Other Etcd Configuration",
+      "text": "etcd-statefulset.md"
+      },
+      {
+      "title": "Step 8: Etcd Teardown",
+      "text": "etcd-statefulset.md"
+      },
+      {
+      "title": "Step 9: Load Postgres Operator",
+      "text": "etcd-statefulset.md"
+      },
+      {
+      "title": "Step 10: Create Postgres Cluster",
+      "text": "etcd-statefulset.md"
+      },
+      {
+      "title": "Step 11: Demonstrate Postgres HA",
+      "text": "etcd-statefulset.md"
+      },
+      {
+      "title": "Step 12: Try out PostgreSQL Connections",
+      "text": "etcd-statefulset.md"
+      },
+      {
+      "title": "Step 13: PostgreSQL Configuration Methods",
+      "text": "etcd-statefulset.md"
+      },
+      {
+      "title": "Step 14: Other PatroniCTL Commands",
+      "text": "etcd-statefulset.md"
+      },
+      {
+      "title": "Step 15: Delete PostgreSQL Cluster",
+      "text": "etcd-statefulset.md"
+      },
+      {
+      "title": "Step 16: Shutdown",
+      "text": "etcd-statefulset.md"
+      },
+    ],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "*",
+          "target": "~/"
+        },
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "bash"
+  }
+}

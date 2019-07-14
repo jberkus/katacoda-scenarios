@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: etcd
+  labels:
+    app: etcd
+spec:
+  serviceName: etcd
+  replicas: 3
+  selector:
+    matchLabels:
+      app: etcd
+  template:
+    metadata:
+      name: etcd
+      labels:
+        app: etcd
+    spec:
+      containers:
+      - name: etcd
+        image: jberkus/etcd-manual:3.3.1
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 2380
+          name: peer
+        - containerPort: 2379
+          name: client
+        resources:
+          requests:
+            cpu: 100m
+            memory: 512Mi
+        env:
+        - name: INITIAL_CLUSTER_SIZE
+          value: "3"
+        - name: SET_NAME
+          value: etcd
+        volumeMounts:
+        - name: datadir
+          mountPath: /var/run/etcd
+        lifecycle:
+          preStop:
+            exec:
+              command:
+                - "/bin/sh"
+                - "-ec"
+                - "/cleanup.sh"
+        command:
+          - "/bin/sh"
+          - "-ec"
+          - "/entrypoint.sh"
+      volumes:
+      - name: datadir
+        emptyDir: {}

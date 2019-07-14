@@ -80,8 +80,8 @@
     "assets": {
       "master": [
         {
-          "file": "*",
-          "target": "~/"
+          "file": "etcd-manual/*",
+          "target": "~/etcd-manual/"
         }
       ]
     }

@@ -68,7 +68,7 @@
       {
       "title": "Step 16: Shutdown",
       "text": "etcd-statefulset.md"
-      },
+      }
     ],
     "intro": {
       "text": "intro.md",

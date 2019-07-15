@@ -21,7 +21,7 @@ runs an operator pod.
 
 `/bin/bash create_role.sh`{{execute}}
 
-`kubectl create -f deployment.`{{execute}}
+`kubectl create -f deployment.yaml`{{execute}}
 
 This should create a CRD
 

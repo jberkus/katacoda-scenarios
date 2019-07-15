@@ -18,7 +18,7 @@ Let's try killing an Etcd pod and check that the cluster survives:
 
 `kubectl get pods`{{execute}}
 
-`kubectl delete --force etcd-2 `{{execute}}
+`kubectl delete pod etcd-1 `{{execute}}
 
 `kubectl get pods`{{execute}}
 

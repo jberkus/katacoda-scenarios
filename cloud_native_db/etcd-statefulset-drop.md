@@ -39,3 +39,5 @@ We need to remove this cluster so that we can do further exercises.  This Kubern
 `/bin/bash teardown.sh`{{execute}}
 
 `kubectl get pods`{{execute}}
+
+`cd ..`{{execute}}

@@ -1,1 +1,1 @@
-Welcome to your first Katacoda Scenario!
+Welcome to the Cloud Native Databases tutorial!

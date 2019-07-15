@@ -1,7 +1,7 @@
-This is your first step.
+Now we need to cleanup to make way for the Postgres cluster.
 
-## Task
+## Delete the Etcd assets
 
-This is an _example_ of creating a scenario and running a **command**
+`/bin/bash teardown.sh`{{execute}}
 
-`echo 'Hello World'`{{execute}}
+`cd ~/`{{execute}}

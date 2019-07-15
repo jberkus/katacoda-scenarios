@@ -1,0 +1,17 @@
+kind: Pod
+metadata:
+  name: pg-shell
+spec:
+  containers:
+  - name: pg-shell
+    image: jberkus/simple-patroni:v3
+    command: ["/bin/bash", "-ec", "while :; do echo '.'; sleep 1000 ; done"]
+    env:
+    - name: PGUSER
+      value: postgres
+    - name: PGPASSWORD
+      valueFrom:
+        secretKeyRef:
+          name: patronidemo
+          key: superuser-password
+  restartPolicy: Never

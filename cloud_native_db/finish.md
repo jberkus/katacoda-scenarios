@@ -1,1 +1,1 @@
-You've completed your first Katacoda scenario!
+You've completed the Cloud Native Databases tutorial!

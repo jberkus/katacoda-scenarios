@@ -18,56 +18,48 @@
       "text": "etcd-operator-load.md"
       },
       {
-      "title": "Step 4: Create Etcd Cluster",
-      "text": "etcd-cluster-create.md"
-      },
-      {
-      "title": "Step 5: Demonstrate Etcd HA",
+      "title": "Step 4: Demonstrate Etcd HA",
       "text": "etcd-operator-ha.md"
       },
       {
-      "title": "Step 6: Grow the Etcd Cluster",
+      "title": "Step 5: Grow the Etcd Cluster",
       "text": "etcd-operator-grow.md"
       },
       {
-      "title": "Step 7: Other Etcd Configuration",
-      "text": "etcd-operator-config.md"
-      },
-      {
-      "title": "Step 8: Etcd Teardown",
+      "title": "Step 6: Etcd Teardown",
       "text": "etcd-operator-drop.md"
       },
       {
-      "title": "Step 9: Load Postgres Operator",
-      "text": "etcd-statefulset.md"
+      "title": "Step 7: Load Postgres Operator",
+      "text": "create-postgres-operator.md"
       },
       {
-      "title": "Step 10: Create Postgres Cluster",
-      "text": "etcd-statefulset.md"
+      "title": "Step 8: Create Postgres Cluster",
+      "text": "create-postgres-cluster.md"
       },
       {
-      "title": "Step 11: Demonstrate Postgres HA",
-      "text": "etcd-statefulset.md"
+      "title": "Step 9: Demonstrate Postgres HA",
+      "text": "postgres-ha.md"
       },
       {
-      "title": "Step 12: Try out PostgreSQL Connections",
-      "text": "etcd-statefulset.md"
+      "title": "Step 10: Try out PostgreSQL Connections",
+      "text": "postgres-connections.md"
       },
       {
-      "title": "Step 13: PostgreSQL Configuration Methods",
-      "text": "etcd-statefulset.md"
+      "title": "Step 11: PostgreSQL Configuration Methods",
+      "text": "postgres-configuration.md"
       },
       {
-      "title": "Step 14: Other PatroniCTL Commands",
-      "text": "etcd-statefulset.md"
+      "title": "Step 12: Other PatroniCTL Commands",
+      "text": "patronictl.md"
       },
       {
-      "title": "Step 15: Delete PostgreSQL Cluster",
-      "text": "etcd-statefulset.md"
+      "title": "Step 13: Delete PostgreSQL Cluster",
+      "text": "postgres-operator-drop.md"
       },
       {
-      "title": "Step 16: Shutdown",
-      "text": "etcd-statefulset.md"
+      "title": "Step 14: Shutdown",
+      "text": "exit.md"
       }
     ],
     "intro": {

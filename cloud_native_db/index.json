@@ -78,7 +78,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "master": [
+      "host01": [
         {
           "file": "etcd-manual/*",
           "target": "~/etcd-manual/"

@@ -1,6 +1,6 @@
-This is your first step.
+Creating the Etcd Operator
 
-## Task
+## Install the CRD
 
 This is an _example_ of creating a scenario and running a **command**
 

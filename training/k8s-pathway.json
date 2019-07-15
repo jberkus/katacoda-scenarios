@@ -1,0 +1,12 @@
+{
+  "title": "Cloud Native DB Workshop",
+  "courses": [
+    {
+      "pathway_id": "jberkus",
+      "course_id": "cloud_native_db",
+      "id": "cloud_native_db",
+      "title": "Cloud Native Databases Workshop",
+      "description": "In-person workshop for learning how to deploy and administrate databases running on Kubernetes"
+    }
+  ]
+}

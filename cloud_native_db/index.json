@@ -30,10 +30,6 @@
       "text": "etcd-operator-drop.md"
       },
       {
-      "title": "Step 7: Load Postgres Operator",
-      "text": "create-postgres-operator.md"
-      },
-      {
       "title": "Step 8: Create Postgres Cluster",
       "text": "create-postgres-cluster.md"
       },
@@ -82,6 +78,10 @@
         {
           "file": "postgres-operator/*",
           "target": "~/postgres-operator/"
+        },
+        {
+          "file": "postgres-manual/*",
+          "target": "~/postgres-manual/"
         }
       ]
     }

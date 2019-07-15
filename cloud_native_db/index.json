@@ -82,6 +82,14 @@
         {
           "file": "etcd-manual/*",
           "target": "~/etcd-manual/"
+        },
+        {
+          "file": "etcd-operator/*",
+          "target": "~/etcd-operator/"
+        },
+        {
+          "file": "postgres-operator/*",
+          "target": "~/postgres-operator/"
         }
       ]
     }

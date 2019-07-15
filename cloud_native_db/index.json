@@ -14,7 +14,7 @@
       "text": "etcd-statefulset-drop.md"
       },
       {
-      "title": "Step 3: Load Etcd Operator",
+      "title": "Step 3: Load the Etcd Operator",
       "text": "etcd-operator-load.md"
       },
       {
@@ -23,19 +23,19 @@
       },
       {
       "title": "Step 5: Demonstrate Etcd HA",
-      "text": "etcd-statefulset.md"
+      "text": "etcd-operator-ha.md"
       },
       {
       "title": "Step 6: Grow the Etcd Cluster",
-      "text": "etcd-statefulset.md"
+      "text": "etcd-operator-grow.md"
       },
       {
       "title": "Step 7: Other Etcd Configuration",
-      "text": "etcd-statefulset.md"
+      "text": "etcd-operator-config.md"
       },
       {
       "title": "Step 8: Etcd Teardown",
-      "text": "etcd-statefulset.md"
+      "text": "etcd-operator-drop.md"
       },
       {
       "title": "Step 9: Load Postgres Operator",
@@ -78,7 +78,7 @@
       "text": "finish.md"
     },
     "assets": {
-      "host01": [
+      "master": [
         {
           "file": "etcd-manual/*",
           "target": "~/etcd-manual/"
@@ -99,7 +99,6 @@
     "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "openshift-3-11",
-    "port": 8443
+    "image": "kubernetes-cluster-4node-running"
   }
 }

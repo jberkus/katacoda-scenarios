@@ -10,7 +10,7 @@ spec:
   clusterIP: None
 
 ---
-apiVersion: apps/v1
+apiVersion: apps/v1beta1
 kind: StatefulSet
 metadata:
   name: &cluster_name patronidemo
@@ -29,7 +29,7 @@ spec:
       serviceAccountName: patronidemo
       containers:
       - name: *cluster_name
-        image: "jberkus/simple-patroni:v3"
+        image: "jberkus/patroni-katacoda:0.2"
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8008
@@ -82,8 +82,23 @@ spec:
           value: '0.0.0.0:8008'
       terminationGracePeriodSeconds: 0
       volumes:
-        - name: pgdata
-          emptyDir: {}
+      - name: pgdata
+        emptyDir: {}
+#  volumeClaimTemplates:
+#  - metadata:
+#      labels:
+#        application: spilo
+#        spilo-cluster: *cluster_name
+#      annotations:
+#        volume.alpha.kubernetes.io/storage-class: anything
+#      name: pgdata
+#    spec:
+#      accessModes:
+#      - ReadWriteOnce
+#      resources:
+#        requests:
+#          storage: 5Gi
+
 ---
 apiVersion: v1
 kind: Endpoints
@@ -107,6 +122,24 @@ spec:
   ports:
   - port: 5432
     targetPort: 5432
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: &cluster_name patronidemo-ro
+  labels:
+    application: patroni
+    cluster-name: *cluster_name
+spec:
+  type: ClusterIP
+  ports:
+  - port: 5432
+    targetPort: 5432
+  selector:
+    application: patroni
+    cluster-name: *cluster_name
 
 ---
 apiVersion: v1
@@ -144,8 +177,9 @@ rules:
   - patch
   - update
   - watch
-  # delete is required only for 'patronictl remove'
+  # delete and deletecollection are required only for 'patronictl remove'
   - delete
+  - deletecollection
 - apiGroups:
   - ""
   resources:
@@ -158,8 +192,9 @@ rules:
   - create
   - list
   - watch
-  # delete is required only for for 'patronictl remove'
+  # delete and deletecollection are required only for for 'patronictl remove'
   - delete
+  - deletecollection
 - apiGroups:
   - ""
   resources:

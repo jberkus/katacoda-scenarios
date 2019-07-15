@@ -42,19 +42,15 @@
       "text": "postgres-connections.md"
       },
       {
-      "title": "Step 11: PostgreSQL Configuration Methods",
-      "text": "postgres-configuration.md"
-      },
-      {
-      "title": "Step 12: Other PatroniCTL Commands",
+      "title": "Step 11: Managing PostgreSQL with PatroniCTL",
       "text": "patronictl.md"
       },
       {
-      "title": "Step 13: Delete PostgreSQL Cluster",
-      "text": "postgres-operator-drop.md"
+      "title": "Step 12: Delete PostgreSQL Cluster",
+      "text": "postgres-cluster-drop.md"
       },
       {
-      "title": "Step 14: Shutdown",
+      "title": "Step 13: Shutdown",
       "text": "exit.md"
       }
     ],

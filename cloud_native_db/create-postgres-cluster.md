@@ -5,6 +5,8 @@ Now it's time to create a PostgreSQL cluster as a statefulset:
 
 `cd postgres-manual`{{execute}}
 
+`more patroni_k8s.yaml`{{execute}}
+
 `kubectl create -f patroni_k8s.yaml`{{execute}}
 
 Watch for the nodes to come up:
@@ -19,11 +21,11 @@ And check out the services:
 
 `kubectl get services`{{execute}}
 
-There's also a few configmaps:
+<!-- There's also a few configmaps:
 
 `kubectl get configmaps`{{execute}}
 `kubectl describe configmap patronidemo-config`{{execute}}
-`kubectl describe configmap patronidemo-leader`{{execute}}
+`kubectl describe configmap patronidemo-leader`{{execute}} -->
 
 check out secrets
 

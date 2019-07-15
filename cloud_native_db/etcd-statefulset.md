@@ -9,10 +9,12 @@ First let's look at the cluster we have:
 
 `kubectl get nodes`{{execute}}
 
+Repeat the above until you have four nodes all showing "Ready".
+
 Now, we don't have any actual storage, which will affect the rest of the
 workshop:
 
-`kubectl get pvs`{{execute}}
+`kubectl get pv`{{execute}}
 
 ## Check out the Services:
 
